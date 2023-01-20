@@ -1,7 +1,6 @@
 cask "keybase" do
   version "6.0.4,20230113191846,6e1343b357"
   sha256 "eaaeb2797f81375ddea1de92b8f1ec41b8110a684804a802a27ad2a5ec65f9ef"
-  depends_on arch: :x86_64
 
   url "https://prerelease.keybase.io/darwin-updates/Keybase-#{version.csv.first}-#{version.csv.second}%2B#{version.csv.third}.zip"
   name "Keybase"
@@ -19,6 +18,7 @@ cask "keybase" do
   end
 
   auto_updates true
+  depends_on arch: :x86_64
 
   app "Keybase.app"
 
